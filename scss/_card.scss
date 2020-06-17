@@ -8,9 +8,9 @@
     height: 200px;
     margin: 15px;
     padding:15px;
-    transition: all 0.5s ease;
+
+    box-shadow: 5px 5px 5px 0 gray;
     
-    transition: box-shadow 1s;
     background-color: white;
 }
 
@@ -60,5 +60,27 @@
         font-size: 30px;
                
     }
+
+    ul {
+        // visibility: hidden;
+        height: 0;
+        opacity: 0;
+        list-style-type: '-';
+        margin-top: 10px;
+        transition: height 0.3s ease,
+                    opacity 0.3s ease;
+
+        span {
+            position: relative;
+            left: 10px;
+        }
+    }
+
+    &:hover  ul{
+        // visibility: visible;
+        height: 100px;
+        opacity: 1;
+    }
 }
+
 
