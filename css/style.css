@@ -102,6 +102,10 @@ html {
   height: 100%;
 }
 
+main {
+  margin-top: 70px;
+}
+
 h2 {
   font-size: 60px;
   text-align: center;
@@ -145,7 +149,6 @@ header {
   padding: 5px;
   width: 100%;
   z-index: 2;
-  margin-bottom: 25px;
 }
 
 header h1 {
@@ -173,7 +176,6 @@ header .logo {
 }
 
 .wrapper-vid {
-  margin: 100px 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -202,6 +204,25 @@ header .logo {
   max-height: 450px;
 }
 
+.desc-section {
+  text-align: justify;
+  padding: 0px 20px;
+  margin: 20px 10px;
+}
+
+.desc-section ul {
+  list-style-type: '-';
+}
+
+.desc-section ul li {
+  margin: 5px 0px;
+}
+
+.desc-section span {
+  position: relative;
+  left: 10px;
+}
+
 hr {
   margin: 50px 40px;
   height: 2px;
@@ -209,18 +230,18 @@ hr {
   border: none;
 }
 
-.contact {
+.form-div {
   margin: 40px 20px;
 }
 
-.contact .email {
+.form-div .email {
   width: 70vw;
   height: 40px;
   font-size: 30px;
   padding: 2px 5px;
 }
 
-.contact .container-div {
+.form-div .container-div {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -237,7 +258,7 @@ hr {
           align-items: center;
 }
 
-.contact .submit {
+.form-div .submit {
   height: 40px;
   width: 20vw;
 }

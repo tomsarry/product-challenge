@@ -13,6 +13,10 @@ html {
     height: 100%;
 }
 
+main {
+    margin-top: 70px;
+}
+
 h2 {
     font-size: 60px;
     text-align: center;
@@ -40,7 +44,6 @@ header {
     padding: 5px;
     width: 100%;
     z-index: 2;
-    margin-bottom: 25px;
 
     h1 {
         width: 40%;
@@ -70,7 +73,7 @@ header {
 }
 
 .wrapper-vid {
-    margin: 100px 50px;
+    // margin: 100px 50px;
     // max-width: 700px;
     display: flex;
     flex-direction: column;
@@ -95,6 +98,25 @@ header {
     max-height: 450px;
 }
 
+.desc-section {
+    text-align: justify;
+    padding: 0px 20px;
+    margin: 20px 10px;
+
+    ul {
+        list-style-type: '-';
+        li {
+            margin: 5px 0px;
+        }
+    }
+
+    span {
+        position: relative;
+        left: 10px;
+    }
+    
+}
+
 hr {
     margin: 50px 40px;
     height: 2px;
@@ -102,7 +124,7 @@ hr {
     border: none;
 }
 
-.contact {
+.form-div {
     margin: 40px 20px;
 
     .email {
