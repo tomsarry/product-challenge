@@ -1,16 +1,15 @@
 .nav-bar {
-    max-width: 40%;
     ul {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
-    
+    align-items: center;   
     }
 
     li {
         margin: 0 10px;
         list-style: none;
+        font-size: 25px
     }
 
     a {
@@ -21,6 +20,5 @@
             opacity: 0.7;      
         }
     }
-
     
 }

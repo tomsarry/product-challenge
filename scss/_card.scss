@@ -27,7 +27,7 @@
             background-color: white;
         }
 
-        h2 {
+        h3 {
             color: blue;
         }
 
@@ -39,7 +39,7 @@
         &:hover {
         }
 
-        h2 {
+        h3 {
             color: green;
         }
     }
@@ -50,17 +50,12 @@
         &:hover {
         }
         
-        h2 {
+        h3 {
             color: gold;
         }
     }
 
-    &:hover {
-        h2 {
-        }
-    }
-
-    h2 {
+    h3 {
         text-align: center;
         font-size: 30px;
                

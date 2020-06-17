@@ -7,7 +7,7 @@
 
     
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
@@ -46,13 +46,16 @@
 
         <div class="wrapper-vid">
             <iframe id="video" class="video" width="100%" height="100%" src="https://www.youtube.com/embed/u44K1JAfW-0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <label for="video">Ever wanted to climb out of silver ?</label>
         </div>
 
         <hr>
 
+        <h2>Pricing</h2>
+
         <div class="pricing" id="pricing">
             <div class="card card-regular">
-                <h2 class="">Regular</h2>
+                <h3 class="">Regular</h3>
 
                 <!-- <ul>
                     <li></li>
@@ -61,7 +64,7 @@
             </div>
 
             <div class="card card-premium">
-                <h2 class="">Premium</h2>
+                <h3 class="">Premium</h3>
 
                 <!-- <ul>
                     <li></li>
@@ -70,7 +73,7 @@
             </div>
 
             <div class="card card-elite">
-                <h2 class="">Elite</h2>
+                <h3 class="">Elite</h3>
 
                 <!-- <ul>
                     <li></li>
@@ -84,9 +87,12 @@
         
         <div class="contact">
             <form action="https://www.freecodecamp.com/email-submit">
-                <label for="email">Want to receive updates about the product ?</label>
-                <input id="contact" type="email" placeholder="Email adress" pattern="[A-z0-9._%+-]+@[A-z0-9.-]+\.[A-z]{2,4}" name="email" id="email" required>
-                <input type="submit" value="Submit" id="submit">
+                <label for="email" id="contact">Want to receive updates about the product ?</label>
+                <div class="container-div">
+                    <input type="email" class="email" placeholder="Email adress" pattern="[A-z0-9._%+-]+@[A-z0-9.-]+\.[A-z]{2,4}" name="email" id="email" required>
+                    <input type="submit" value="Submit" id="submit" class="submit">
+                </div>
+                
             </form>
         </div>
         

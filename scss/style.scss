@@ -13,6 +13,13 @@ html {
     height: 100%;
 }
 
+h2 {
+    font-size: 60px;
+    text-align: center;
+    font-weight: 200;
+    margin: 30px 0px;
+}
+
 .pricing {
     display: flex;
     flex-direction: row;
@@ -38,7 +45,9 @@ header {
     h1 {
         width: 40%;
         text-align: center;
-        font-size: 40px;
+        font-size: 50px;
+        max-width: 200px;
+        line-height: 50px;
     }
 
     .logo {
@@ -62,15 +71,28 @@ header {
 
 .wrapper-vid {
     margin: 100px 50px;
-    max-width: 700px;
+    // max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+    label {
+        font-style: italic;
+        font-weight: 200;
+        margin: 5px 0px;
+    }
 }
 
 .video {
     width: 90vw;
+    max-width: 800px;
 
     // keeping aspect ratio of 16/9
     // 90 * 9 / 16 = 50,625‬
     height: 50.625vw;
+    max-height: 450px;
 }
 
 hr {
@@ -82,6 +104,26 @@ hr {
 
 .contact {
     margin: 40px 20px;
+
+    .email {
+        width: 70vw;
+        height: 40px;
+        font-size: 30px;
+        padding: 2px 5px;
+    }
+
+    .container-div {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .submit {
+        height: 40px;
+        width: 20vw;
+    }
 }
 
 footer {
