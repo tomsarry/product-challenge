@@ -1,9 +1,16 @@
+@import "config";
+
 @import "card";
+@import "navbar";
 
 * {
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
+    font-family: 'Roboto Slab', serif;
+}
+html {
+    height: 100%;
 }
 
 .pricing {
@@ -14,6 +21,79 @@
     max-width: 100%;
     margin: 0 auto;
 }
+
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 5px;
+    width: 100%;
+    z-index: 2;
+    margin-bottom: 25px;
+
+    h1 {
+        width: 40%;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .logo {
+        max-width: 20%;
+    }
+
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+.link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.wrapper-vid {
+    margin: 100px 50px;
+    max-width: 700px;
+}
+
+.video {
+    width: 90vw;
+
+    // keeping aspect ratio of 16/9
+    // 90 * 9 / 16 = 50,625‬
+    height: 50.625vw;
+}
+
+hr {
+    margin: 50px 40px;
+    height: 2px;
+    background-color: black;
+    border: none;
+}
+
+.contact {
+    margin: 40px 20px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+}
+
 
 @import "mobile";
 
