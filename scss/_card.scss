@@ -9,7 +9,7 @@
     margin: 15px;
     padding:15px;
 
-    box-shadow: 5px 5px 5px 0 gray;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.15);
     
     background-color: white;
 }
@@ -18,25 +18,35 @@
 
 .card {
     @extend %card;
+    transition: background-color 1s ease;
 
 
     &-regular {
         border: 1px solid gray;
 
-        &:hover {
-            background-color: white;
+
+        &:hover h3{ 
+            transition: all .5s ease;
+            background: -webkit-linear-gradient(225deg, rgba(124,0,195,1) 25%, rgba(0,0,226,1) 50%, rgba(0,0,159,1) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;     
         }
+        
 
         h3 {
-            color: blue;
+            background: -webkit-linear-gradient(225deg, rgba(124,0,195,1) 0%, rgba(0,0,226,1) 50%, rgba(0,0,159,1) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
     }
 
     &-premium {
-        border: 1px solid gray;
+        border: 2px solid gray;
 
         &:hover {
+            transition: border .5s ease;
+            border: 2px solid green;
         }
 
         h3 {
@@ -58,6 +68,7 @@
     h3 {
         text-align: center;
         font-size: 30px;
+        text-transform: uppercase;
                
     }
 
