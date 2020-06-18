@@ -1,0 +1,9 @@
+$blue: #016a9b;
+$green: #0ba53b;
+$gold: #d18f00;
+
+$blue-gradient: linear-gradient(45deg, $blue 30%, lighten($blue, 20%) 90%);
+
+$green-gradient: linear-gradient(45deg, $green 30%, lighten($green, 20%) 90%);
+
+$gold-gradient: linear-gradient(45deg, $gold 30%, lighten($gold, 20%) 90%);

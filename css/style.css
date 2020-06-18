@@ -1,4 +1,8 @@
 .card {
+  min-width: 300px;
+  height: 450px;
+  border-radius: 5px;
+  margin: 45px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6,90 +10,135 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-shadow: 10px 10px 5px #dbdbdb;
+          box-shadow: 10px 10px 5px #dbdbdb;
+  -webkit-transition: -webkit-transform 0.5s ease, -webkit-box-shadow 0.5s ease;
+  transition: -webkit-transform 0.5s ease, -webkit-box-shadow 0.5s ease;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  transition: transform 0.5s ease, box-shadow 0.5s ease, -webkit-transform 0.5s ease, -webkit-box-shadow 0.5s ease;
+  cursor: pointer;
+}
+
+.card .premium {
+  background-size: 150%;
+  background-position: left;
+  -webkit-transition: background-position 0.5s ease;
+  transition: background-position 0.5s ease;
+}
+
+.card:hover .regular,
+.card:hover .premium,
+.card:hover .elite {
+  background-position: right;
+}
+
+.card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 15px 10px 10px #dbdbdb;
+          box-shadow: 15px 10px 10px #dbdbdb;
+}
+
+.card-header {
+  height: 115px;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  line-height: 45px;
+}
+
+.card-content {
+  background-color: #fafafa;
+  color: #262626;
+  width: 100%;
+  height: 385px;
+  border-radius: 0 0 10px 10px;
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card-content ul {
+  list-style-type: '-';
+  list-style-position: inside;
+  line-height: 30px;
+}
+
+.card-content li span {
+  position: relative;
+  display: inline-block;
+  left: 15px;
+  top: 3px;
+  font-size: 22px;
+  height: 100%;
+  line-height: 30px;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+}
+
+.card .regular {
+  background-image: linear-gradient(45deg, #016a9b 30%, #05aefd 90%);
+  background-size: 150%;
+  background-position: left;
+  -webkit-transition: background-position 0.3s ease;
+  transition: background-position 0.3s ease;
+}
+
+.card .premium {
+  background-image: linear-gradient(45deg, #0ba53b 30%, #26f165 90%);
+}
+
+.card .elite {
+  background-image: linear-gradient(45deg, #d18f00 30%, #ffc038 90%);
+  background-size: 150%;
+  background-position: left;
+  -webkit-transition: background-position 0.3s ease;
+  transition: background-position 0.3s ease;
+}
+
+.card-title {
+  color: #303030;
+  text-align: center;
+  font-size: 45px;
+  font-weight: 700;
+  font-family: 'Roboto Slab', serif;
+  text-transform: uppercase;
+}
+
+.card .price {
+  font-weight: 200;
+  font-size: 40px;
+  font-family: 'Roboto Slab', serif;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-bottom: 0px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-radius: 7px;
-  width: 200px;
-  height: 200px;
-  margin: 15px;
-  padding: 15px;
-  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
-  background-color: white;
-}
-
-.card {
-  -webkit-transition: background-color 1s ease;
-  transition: background-color 1s ease;
-}
-
-.card-regular {
-  border: 1px solid gray;
-}
-
-.card-regular:hover h3 {
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
-  background: -webkit-linear-gradient(225deg, #7c00c3 25%, #0000e2 50%, #00009f 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.card-regular h3 {
-  background: -webkit-linear-gradient(225deg, #7c00c3 0%, #0000e2 50%, #00009f 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.card-premium {
-  border: 2px solid gray;
-}
-
-.card-premium:hover {
-  -webkit-transition: border .5s ease;
-  transition: border .5s ease;
-  border: 2px solid green;
-}
-
-.card-premium h3 {
-  color: green;
-}
-
-.card-elite {
-  border: 1px solid gray;
-}
-
-.card-elite h3 {
-  color: gold;
-}
-
-.card h3 {
-  text-align: center;
-  font-size: 30px;
-  text-transform: uppercase;
-}
-
-.card ul {
-  height: 0;
-  opacity: 0;
-  list-style-type: '-';
-  margin-top: 10px;
-  -webkit-transition: height 0.3s ease, opacity 0.3s ease;
-  transition: height 0.3s ease, opacity 0.3s ease;
-}
-
-.card ul span {
-  position: relative;
-  left: 10px;
-}
-
-.card:hover ul {
-  height: 100px;
-  opacity: 1;
+  width: 100%;
+  max-height: 100%;
 }
 
 .nav-bar ul {
@@ -144,24 +193,6 @@ h2 {
   text-align: center;
   font-weight: 200;
   margin: 30px 0px;
-}
-
-.pricing {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  max-width: 100%;
-  margin: 40px auto;
 }
 
 .note {
@@ -245,25 +276,6 @@ header .logo {
   max-height: 450px;
 }
 
-.desc-section {
-  text-align: justify;
-  padding: 0px 20px;
-  margin: 20px 10px;
-}
-
-.desc-section ul {
-  list-style-type: '-';
-}
-
-.desc-section ul li {
-  margin: 5px 0px;
-}
-
-.desc-section span {
-  position: relative;
-  left: 10px;
-}
-
 hr {
   margin: 50px 40px;
   height: 2px;
@@ -312,18 +324,6 @@ footer {
   bottom: 0;
   width: 100%;
   height: 20px;
-}
-
-@media (max-width: 700px) {
-  .pricing {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
 }
 
 @media (max-width: 1000px) {
