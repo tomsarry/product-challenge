@@ -1,3 +1,39 @@
+.desc-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 20px;
+}
+
+.desc {
+  margin: 10px;
+  max-width: 50%;
+}
+
+.desc-section {
+  text-align: justify;
+  font-size: 24px;
+  margin: 0 20px;
+  line-height: 40px;
+}
+
+.desc-section ul {
+  list-style-type: '-';
+}
+
+.desc-section ul li {
+  margin: 5px 0px;
+}
+
+.desc-section span {
+  position: relative;
+  left: 10px;
+}
+
 .card {
   min-width: 300px;
   height: 450px;
@@ -332,6 +368,20 @@ footer {
   }
   .nav-bar li {
     font-size: 20px;
+  }
+  .desc {
+    max-width: 100%;
+  }
+  .desc-section {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .desc-div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 5px;
   }
 }
 /*# sourceMappingURL=style.css.map */

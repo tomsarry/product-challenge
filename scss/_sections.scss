@@ -1,0 +1,32 @@
+.desc-div {
+    display: flex;
+    flex-direction: row;
+    // flex-wrap: wrap;
+    padding: 20px;
+}
+
+.desc {
+    margin: 10px;
+    max-width: 50%;
+}
+
+.desc-section {
+    text-align: justify;
+    font-size: 24px;
+    margin: 0 20px;
+    line-height: 40px;
+    
+
+    ul {
+        list-style-type: '-';
+        li {
+            margin: 5px 0px;
+        }
+    }
+
+    span {
+        position: relative;
+        left: 10px;
+    }
+    
+}
