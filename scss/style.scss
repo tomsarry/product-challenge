@@ -55,7 +55,8 @@ header {
     }
 
     .logo {
-        max-width: 20%;
+        // max-width: 20%;
+        height: 40px;
     }
 
 }
@@ -109,25 +110,69 @@ hr {
 .form-div {
     margin: 40px 20px;
 
+    label {
+        font-size: 24px;
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+    }
+
     .email {
         width: 70vw;
         height: 40px;
-        font-size: 30px;
-        padding: 2px 5px;
+        font-size: 28px;
+        padding: 2px 10px;
+        border: 2px solid black;
     }
 
     .container-div {
-        width: 100%;
+        width: 80%;
+        margin: auto;
         display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
         align-items: center;
+
+
+        .email {
+            justify-self: center;
+            margin: 5px;
+        }
     }
 
     .submit {
+        cursor: pointer;
         height: 40px;
         width: 20vw;
+        font-size: 24px;
+        border: 2px dashed black;
+        background-color: black;
+        text-transform: uppercase;
+        color: white;
+        transition: background-color .3s ease;
+
+        &:hover {
+            background-color: white;
+            color: black;
+            border: 2px dashed black;
+        }
     }
+}
+
+.social-div {
+    margin: 40px auto;
+    max-width: 500px;
+    display: flex;
+    justify-content: space-around;
+
+    img {
+        height: 40px; 
+        transition: transform .3s ease, 
+                    opacity .3s ease;
+        
+        &:hover {
+            opacity: .7;
+            transform: scale(1.2);
+        }
+    } 
 }
 
 footer {

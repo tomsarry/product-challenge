@@ -1,3 +1,19 @@
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url("/assets/fonts/RobotoSlab-Regular.woff2") format("woff2"), url("/assets/fonts/RobotoSlab-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url("/assets/fonts/RobotoSlab-ExtraLight.woff2") format("woff2"), url("/assets/fonts/RobotoSlab-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
 .desc-div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -112,11 +128,9 @@
   display: inline-block;
   left: 15px;
   top: 3px;
-  font-size: 22px;
+  font-size: 20px;
   height: 100%;
   line-height: 30px;
-  font-weight: 300;
-  font-family: 'Roboto', sans-serif;
 }
 
 .card .regular {
@@ -268,7 +282,7 @@ header h1 {
 }
 
 header .logo {
-  max-width: 20%;
+  height: 40px;
 }
 
 .sticky {
@@ -323,33 +337,79 @@ hr {
   margin: 40px 20px;
 }
 
+.form-div label {
+  font-size: 24px;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+
 .form-div .email {
   width: 70vw;
   height: 40px;
-  font-size: 30px;
-  padding: 2px 5px;
+  font-size: 28px;
+  padding: 2px 10px;
+  border: 2px solid black;
 }
 
 .form-div .container-div {
-  width: 100%;
+  width: 80%;
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
+.form-div .container-div .email {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin: 5px;
+}
+
 .form-div .submit {
+  cursor: pointer;
   height: 40px;
   width: 20vw;
+  font-size: 24px;
+  border: 2px dashed black;
+  background-color: black;
+  text-transform: uppercase;
+  color: white;
+  -webkit-transition: background-color .3s ease;
+  transition: background-color .3s ease;
+}
+
+.form-div .submit:hover {
+  background-color: white;
+  color: black;
+  border: 2px dashed black;
+}
+
+.social-div {
+  margin: 40px auto;
+  max-width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.social-div img {
+  height: 40px;
+  -webkit-transition: opacity .3s ease,  -webkit-transform .3s ease;
+  transition: opacity .3s ease,  -webkit-transform .3s ease;
+  transition: transform .3s ease,  opacity .3s ease;
+  transition: transform .3s ease,  opacity .3s ease,  -webkit-transform .3s ease;
+}
+
+.social-div img:hover {
+  opacity: .7;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 footer {
@@ -369,6 +429,9 @@ footer {
   .nav-bar li {
     font-size: 20px;
   }
+  header .logo {
+    height: 30px;
+  }
   .desc {
     max-width: 100%;
   }
@@ -382,6 +445,39 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 5px;
+  }
+}
+
+@media (max-width: 700px) {
+  header .logo {
+    display: none;
+  }
+  .nav-bar li {
+    font-size: 16px;
+  }
+  .name {
+    font-size: 30px;
+  }
+  #contact {
+    font-size: 16px;
+  }
+  .container-div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container-div .email {
+    width: 100%;
+    margin: none;
+    font-size: 20px;
+  }
+  .container-div .submit {
+    width: 100%;
+    font-size: 18px;
   }
 }
 /*# sourceMappingURL=style.css.map */
