@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
+    
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -14,23 +15,21 @@
     <header id="header" class="sticky">
 
         <!-- un 0 ?  -->
-        <img src="assets/sniper.png" alt="sniper logo" class="logo">
+        <img src="assets/sniper.png" alt="sniper logo" class="logo" id="header-img">
 
         <h1 class="name">0stano</h1>
 
         <nav id="nav-bar" class="nav-bar">
             <ul>
 
-                <!-- create a text description -->
-
-                <li class="nav-link">
-                    <a href="#description">Description</a>
+                <li>
+                    <a href="#description" class="nav-link">Description</a>
                 </li>
-                <li class="nav-link">
-                    <a href="#pricing">Pricing</a>
+                <li>
+                    <a href="#pricing" class="nav-link">Pricing</a>
                 </li>
-                <li class="nav-link">
-                    <a href="#contact">Contact</a>
+                <li>
+                    <a href="#contact" class="nav-link">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -149,7 +148,7 @@
 
         
         <div class="form-div">
-            <form action="https://www.freecodecamp.com/email-submit">
+            <form action="https://www.freecodecamp.com/email-submit" id="form">
                 <label for="email" id="contact">Subscribe to 0stano's newsletter :</label>
                 <div class="container-div">
                     <input type="email" class="email" placeholder="Email adress" pattern="[A-z0-9._%+-]+@[A-z0-9.-]+\.[A-z]{2,4}" name="email" id="email" required>
@@ -158,12 +157,19 @@
                 
             </form>
         </div>
+
+        <div class="social-div">
+            <a href="https://www.instagram.com/mark.halleman/" target="_blank"><img src="assets/svg/instagram.svg"></a>
+            <a href="https://www.youtube.com/channel/UCHiLDOeZE5rOGouXFrRxt8Q" target="_blank"><img src="assets/svg/youtube.svg"></a>
+            <a href="https://www.linkedin.com/in/mark-halleman-283334196/" target="_blank"><img src="assets/svg/linkedin.svg"></a>
+            
+        </div>
         
     </main>
 
 
     <footer>
-        Copyright <a class="link" href="https://github.com/tomsarry">SARRY Tom</a> / June 2020
+        Copyright <a class="link" href="https://github.com/tomsarry" target="_blank">SARRY Tom</a> / June 2020
     </footer>
 
     <!-- <script src="js/script.js" type="text/javascript"></script>  -->
