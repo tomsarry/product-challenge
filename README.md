@@ -7,6 +7,6 @@ Made with HTML & SASS.
 
 ## See it live
 
-[![Netlify Status](https://0stano-coaching.netlify.app/)
+[![Netlify Status](https://0stano-coaching.netlify.app/)]
 
 https://0stano-coaching.netlify.app/
